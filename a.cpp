@@ -17,6 +17,8 @@ public:
   Relation(const Relation &) = delete;
   Relation(Relation &&) = delete;
 
+  ~Relation() { delete[] relation; }
+
   static Relation from_stdin(int n) {
     bool *relation = new bool[n * n];
 
