@@ -1,5 +1,8 @@
+#include <cstddef>
 #include <cstdint>
 #include <iostream>
+#include <stdexcept>
+#include <string>
 #include <vector>
 
 uint16_t int_from_binary(const std::string &binary);
